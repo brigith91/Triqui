@@ -6,7 +6,7 @@ Tablero: list[list[str]] = [
 ]
 
 
-def imprimir_tablero(tab: list[list[str], ...])-> None
+def imprimir_tablero(tab: list[list[str]])-> None:
 
     print('    A  B   C')
     nombres_filas = 'XYZ'
@@ -19,7 +19,7 @@ def imprimir_tablero(tab: list[list[str], ...])-> None
         for casilla in fila:  # recorre columnas
             print(casilla, end=' ↿ ')
 
-        print(nombres_filas)
+        print(nom_fila)
         if num_fila < 2:  # imprime la fila
             print(' ----------------')
 
